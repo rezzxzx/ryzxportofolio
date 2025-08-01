@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Performance-optimized scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+  overscroll-behavior: none;
+  contain: layout style paint;
+}
+
+/* Mobile-optimized scrolling */
+@media (max-width: 768px) {
+  html {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Performance optimizations */
+* {
+  box-sizing: border-box;
+}
+
+/* GPU acceleration for transforms */
+.gpu-accelerated {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Optimized transitions - only when needed */
+.smooth-transition {
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+/* Reduced motion for performance */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Optimized hover effects */
+@media (hover: hover) and (pointer: fine) {
+  .hover-scale:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-out;
+  }
+}
+
+/* Performance optimizations */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* Custom styles for perfect circle images */
+.profile-image {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+:root {
+  --background: hsl(220, 13%, 6%);
+  --foreground: hsl(0, 0%, 95%);
+  --muted: hsl(220, 13%, 13%);
+  --muted-foreground: hsl(220, 9%, 65%);
+  --popover: hsl(220, 13%, 9%);
+  --popover-foreground: hsl(0, 0%, 95%);
+  --card: hsl(220, 13%, 9%);
+  --card-foreground: hsl(0, 0%, 95%);
+  --border: hsl(220, 13%, 18%);
+  --input: hsl(220, 13%, 18%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(220, 13%, 13%);
+  --secondary-foreground: hsl(0, 0%, 95%);
+  --accent: hsl(220, 13%, 18%);
+  --accent-foreground: hsl(0, 0%, 95%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(0, 0%, 95%);
+  --ring: hsl(217, 91%, 60%);
+  --radius: 0.75rem;
+  
+  /* Custom portfolio colors - Blue dark theme */
+  --dark-blue: hsl(220, 13%, 6%);
+  --dark-gray: hsl(220, 13%, 13%);
+  --medium-gray: hsl(220, 9%, 25%);
+  --light-gray: hsl(220, 9%, 65%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --blue-primary: hsl(217, 91%, 60%);
+  --blue-secondary: hsl(217, 91%, 50%);
+  --blue-dark: hsl(217, 91%, 40%);
+}
+
+.dark {
+  --background: hsl(220, 13%, 6%);
+  --foreground: hsl(0, 0%, 95%);
+  --muted: hsl(220, 13%, 13%);
+  --muted-foreground: hsl(220, 9%, 65%);
+  --popover: hsl(220, 13%, 9%);
+  --popover-foreground: hsl(0, 0%, 95%);
+  --card: hsl(220, 13%, 9%);
+  --card-foreground: hsl(0, 0%, 95%);
+  --border: hsl(220, 13%, 18%);
+  --input: hsl(220, 13%, 18%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(220, 13%, 13%);
+  --secondary-foreground: hsl(0, 0%, 95%);
+  --accent: hsl(220, 13%, 18%);
+  --accent-foreground: hsl(0, 0%, 95%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(0, 0%, 95%);
+  --ring: hsl(217, 91%, 60%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #111827 0%, #1f2937 50%, #111827 100%);
+    min-height: 100vh;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-500 to-blue-300 bg-clip-text text-transparent;
+    filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.3));
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-r from-blue-600 to-blue-500;
+  }
+  
+  .glass {
+    @apply bg-gray-900/50 backdrop-blur-sm border border-gray-700/50;
+  }
+  
+  .skill-progress-bar {
+    transition: width 2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .glow-text {
+    text-shadow: 
+      0 0 10px rgba(59, 130, 246, 0.5),
+      0 0 20px rgba(59, 130, 246, 0.3),
+      0 0 30px rgba(59, 130, 246, 0.2);
+  }
+  
+  .typing-cursor {
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+}
+
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+  
+  .animation-delay-800 {
+    animation-delay: 800ms;
+  }
+  
+  .animation-delay-1000 {
+    animation-delay: 1000ms;
+  }
+}
