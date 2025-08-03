@@ -14,7 +14,7 @@ export const PORTFOLIO_CONFIG = {
     location: "Sukabumi, Jawa Barat – Indonesia",
     birthDate: "10 November 2010",
     status: "Pelajar", // Current status (e.g., "Student", "Freelancer", "Developer")
-    passion: "Technology & AI",
+    passion: "Technology",
     
     // Profile & Background Images
     profileImage: "https://files.catbox.moe/6o6y6u.png",
@@ -23,7 +23,7 @@ export const PORTFOLIO_CONFIG = {
     // About Me Section
     aboutMe: {
       title: "Tentang Saya",
-      description: "Sejak kecil saya sangat tertarik pada teknologi. Saya ingin terus belajar dan menjadi yang terbaik dalam bidang teknologi dan AI.",
+      description: "Sejak kecil sudah saya sangat tertarik pada teknologi. Saya ingin terus belajar dan menjadi yang terbaik dalam bidang teknologi.",
       highlights: [
         "Passionate tentang teknologi",
         "Selalu ingin belajar hal baru",
@@ -59,11 +59,11 @@ export const PORTFOLIO_CONFIG = {
   // SKILLS CONFIGURATION
   // ==============================================
   skills: [
-    { name: "GitHub", level: 88, color: "from-gray-400 to-gray-600" },
-    { name: "HTML5", level: 50, color: "from-orange-400 to-red-500" },
-    { name: "JavaScript", level: 32, color: "from-yellow-400 to-orange-500" },
-    { name: "Next.js", level: 10, color: "from-blue-400 to-cyan-500" },
-    { name: "Artificial Intelligence", level: 97, color: "from-purple-400 to-pink-500" }
+    { name: "GitHub", level: 70, color: "from-gray-400 to-gray-600" },
+    { name: "HTML5", level: 49, color: "from-orange-400 to-red-500" },
+    { name: "JavaScript", level: 37, color: "from-yellow-400 to-orange-500" },
+    { name: "Python", level: 25, color: "from-blue-400 to-cyan-500" },
+    { name: "Artificial Intelligence", level: 70, color: "from-purple-400 to-pink-500" }
   ],
 
   // ==============================================
@@ -167,7 +167,7 @@ export const PORTFOLIO_CONFIG = {
   // FOOTER CONFIGURATION
   // ==============================================
   footer: {
-    text: "RyezX Project 2025",
+    text: "©RyezX | All Right Reserved",
     showHeartIcon: false // Set to true to show animated heart
   },
 
