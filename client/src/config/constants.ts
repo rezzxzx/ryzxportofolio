@@ -22,7 +22,7 @@ export const PORTFOLIO_CONFIG = {
     
     // About Me Section
     aboutMe: {
-      title: "Tentang Saya",
+      title: "About Me",
       description: "Sejak kecil sudah saya sangat tertarik pada teknologi. Saya ingin terus belajar dan menjadi yang terbaik dalam bidang teknologi.",
       highlights: [
         "Passionate tentang teknologi",
@@ -40,7 +40,7 @@ export const PORTFOLIO_CONFIG = {
     "Welcome",
     "I'm A Lazy Person",
     "But I'm Still Excited", 
-    "Thank You For Visiting My Website :) "
+    "Thank You For Visiting My Website"
   ],
 
   // ==============================================
