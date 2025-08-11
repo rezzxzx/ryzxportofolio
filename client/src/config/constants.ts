@@ -10,7 +10,7 @@ export const PORTFOLIO_CONFIG = {
   // ==============================================
   personal: {
     fullName: "Reza Arifa Rabbani",
-    displayTitle: "Portofolio", // Shown in navigation
+    displayTitle: "RyezX", // Shown in navigation
     location: "Sukabumi, Jawa Barat – Indonesia",
     birthDate: "10 November 2010",
     status: "Pelajar", // Current status (e.g., "Student", "Freelancer", "Developer")
