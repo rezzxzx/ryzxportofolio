@@ -23,7 +23,7 @@ export default function ProjectsSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            <span className="gradient-text">Project Saya</span>
+            <span className="gradient-text">Projects</span>
           </h2>
           <div className="w-20 h-1 gradient-bg mx-auto rounded-full" />
           <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
