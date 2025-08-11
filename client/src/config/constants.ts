@@ -40,7 +40,7 @@ export const PORTFOLIO_CONFIG = {
     "Welcome",
     "I'm A Lazy Person",
     "But I'm Still Excited", 
-    "Thank You For Visiting My Website"
+    "Thank You For Visiting My Website :) "
   ],
 
   // ==============================================
