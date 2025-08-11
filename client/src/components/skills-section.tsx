@@ -60,7 +60,7 @@ export default function SkillsSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            <span className="gradient-text">Keahlian Saya</span>
+            <span className="gradient-text">Skills</span>
           </h2>
           <div className="w-20 h-1 gradient-bg mx-auto rounded-full" />
         </motion.div>
