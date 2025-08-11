@@ -193,7 +193,7 @@ export default function HeroSection() {
               className="gradient-bg text-white font-semibold px-8 py-3 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
               size="lg"
             >
-              <span>Pelajari Lebih Lanjut</span>
+              <span>More About Me!</span>
               <ChevronDown className="ml-2 h-4 w-4" />
             </Button>
           </motion.div>
