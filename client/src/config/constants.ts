@@ -17,7 +17,7 @@ export const PORTFOLIO_CONFIG = {
     passion: "Technology",
     
     // Profile & Background Images
-    profileImage: "https://files.catbox.moe/6o6y6u.png",
+    profileImage: "https://files.catbox.moe/lvb561.jpg",
     backgroundImage: "https://files.catbox.moe/k10jog.png",
     
     // About Me Section
